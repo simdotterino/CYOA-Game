@@ -1,0 +1,33 @@
+:: StoryTitle
+MaliciousInputs
+
+
+:: StoryData
+{
+  "ifid": "4DAB6441-573C-43C6-A7A5-3E96783199C8",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Background {"position":"825,275","size":"100,100"}
+You are a system administrator for the content filtration software, Blocker Plus. This software is designed to filter out potentially dangerous and inappropriate content on devices that children have access to, in accordance with the Children’s Internet Protection Act (CIPA). Blocker Plus is a popular content filtration software used by the public schools, libraries, and even by parents at home in your city.
+Your job is to review feedback from Blocker Plus users and disable certain filters on a device if requested by an adult.
+Lately, however, you’ve been hearing rumours about unrest among Blocker Plus’ shareholders. Not only that, but recently, you’ve noticed that the software’s blacklist – the list of contents that are filtered out on devices by default – has grown substantially.
+Investigating these issues is not a part of your job as a system administrator. However, not investigating could also have moral consequences. Your choices will impact the children in your community and can shape the direction of content filtration technology in the future.
+
+
+
+:: Start {"position":"675,275","size":"100,100"}
+This “Choose Your Own Adventure” game is inspired by the case study (link: "Malicious Inputs to Content Filters")[(goto-url: "https://www.acm.org/code-of-ethics/case-studies/malicious-inputs-to-content-filters")] by the Association for Computing Machinery on the ACM Code of Ethics and Professional Conduct. 
+
+This game was created by Simran Vig, Trent Carlson, Andy Do and Lynn Nguyen. Each student took on the following role:
+Simran: Writer
+Trent: [role]
+Andy: [role]
+Lynn: [role]
+
+
+[[Continue|Background]]
