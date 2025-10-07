@@ -12,15 +12,78 @@ MaliciousInputs
 }
 
 
-:: Background {"position":"825,275","size":"100,100"}
-You are a system administrator for the content filtration software, Blocker Plus. This software is designed to filter out potentially dangerous and inappropriate content on devices that children have access to, in accordance with the Children’s Internet Protection Act (CIPA). Blocker Plus is a popular content filtration software used by the public schools, libraries, and even by parents at home in your city.
-Your job is to review feedback from Blocker Plus users and disable certain filters on a device if requested by an adult.
-Lately, however, you’ve been hearing rumours about unrest among Blocker Plus’ shareholders. Not only that, but recently, you’ve noticed that the software’s blacklist – the list of contents that are filtered out on devices by default – has grown substantially.
-Investigating these issues is not a part of your job as a system administrator. However, not investigating could also have moral consequences. Your choices will impact the children in your community and can shape the direction of content filtration technology in the future.
+:: About Company {"position":"1000,400","size":"100,100"}
+(text-size: 2)[About Blocker Plus]
 
 
 
-:: Start {"position":"675,275","size":"100,100"}
+(if:(history: where its name contains "Parent Article")'s length is 0)[⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]].]
+
+(if:(history: where its name contains "Shareholder Article")'s length is 0)[⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]]
+
+⮕ [[Start the job.|Start Job]]
+
+
+:: Introduction {"position":"800,200","size":"100,100"}
+You've been offered a position as a Regional Systems Administrator for ''Blocker Plus'', a content filtration software company. 
+
+They are a trusted partner for ensuring that school and library devices block children's access to inappropriate content, and they have a growing number of parents who trust Blocker Plus to protect their kids on their personal devices.
+
+The recruiter is excited to have you become part of their innovative, impactful team.
+
+☞ [[Start the job.|Start Job]]
+
+☞ [[Hmm, let me research them a bit first.|Research Company]]
+
+
+:: Parent Article {"position":"1100,400","size":"100,100"}
+(text-size: 2)[Keeping your child safe online with Blocker Plus]
+
+
+
+(if:(history: where its name contains "About Company")'s length is 0)[⮕ Read the company's [[About Us page|About Company]].]
+
+(if:(history: where its name contains "Shareholder Article")'s length is 0)[⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]]
+
+⮕ [[Start the job.|Start Job]]
+
+
+:: Research Company {"position":"1100,200","size":"100,100"}
+Content filtration software for kids? Hmm, this seems interesting.
+
+⮕ Read the company's [[About Us page|About Company]]
+
+⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]]
+
+⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]
+
+⮕ [[Start the job.|Start Job]]
+
+
+:: Shareholder Article {"position":"1200,400","size":"100,100"}
+(text-size: 2)[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//]
+
+What's a great thing to invest in right now? Many would argue artificial intelligence. Sure, you have your typical players like Nvidia, but how about this unexpected heavyweight that's making the most of the technology?
+
+''Blocker Plus'', you may have heard of this content filtration software that schools, libraries, and parents use to protect their kids from inappropriate content online. They've got lucrative legacy contracts with schools and libraries and a growing subscription plan business from parents looking to protect their kids online.
+
+They've been incorporating advanced machine learning and artificial intelligence to automate identifying and blocking inappropriate content. This has allowed them to reduce manual review by ''nearly 80%'', which investors have certainly noticed. Their stock has risen over 110% this year!
+
+Their software is unmatched by competitors, blocking inappropriate content that typical content filters would miss due to their innovative approach. Schools and libraries have trusted the software for years, and parents are increasingly being sold on it too, subscriber counts have grown ''72%'' year-over-year.
+
+You'd be dumb to not invest in ''Blocker Plus //(NYSE&#58; BPLS)//''
+
+
+(if:(history: where its name contains "About Company")'s length is 0)[⮕ Read the company's [[About Us page|About Company]].]
+
+(if:(history: where its name contains "Parent Article")'s length is 0)[⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]].]
+
+⮕ [[Start the job.|Start Job]]
+
+
+
+
+:: Start {"position":"500,200","size":"100,100"}
 This “Choose Your Own Adventure” game is inspired by the case study (link: "Malicious Inputs to Content Filters")[(goto-url: "https://www.acm.org/code-of-ethics/case-studies/malicious-inputs-to-content-filters")] by the Association for Computing Machinery on the ACM Code of Ethics and Professional Conduct. 
 
 This game was created by Simran Vig, Trent Carlson, Andy Do and Lynn Nguyen. Each student took on the following role:
@@ -30,4 +93,17 @@ Andy: [role]
 Lynn: [role]
 
 
-[[Continue|Background]]
+[[Continue|Title Screen]]
+
+
+:: Start Job {"position":"800,400","size":"100,100"}
+Your new job involves reviewing feedback from Blocker Plus users and disabling filters on a device if requested by an adult.
+
+
+:: Title Screen {"position":"650,200","size":"100,100"}
+(text-colour:red)[(text-size:2)[Malicious Inputs]]
+
+...(live:0.5s)[.](live:1s)[.](live:1.5s)[.](live:2s)[.](live:2.5s)[.](live:3s)[.](live:3.5s)[.]
+
+(live: 4s)[(goto: "Introduction")]
+
