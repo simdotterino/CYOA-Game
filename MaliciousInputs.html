@@ -186,7 +186,7 @@ Another call, and within such a short period of time? This isn’t typical, and 
 → [[Continue-&gt;Slide 11]] 
 </tw-passagedata><tw-passagedata pid="24" name="Slide 11" tags="" position="800,2600" size="100,100">After a couple more hours of filling out paperwork and clacking away at your keyboard, the workday is coming to an end. The clock reads 4:00 PM, and it’s starting to look like you’ll be able to clock out early.
 
-(if: $choice8_2)[
+(if: $choice8_2 is true)[
     [[Continue-&gt;Ending 1]]
 ]
 (else:)[
@@ -207,9 +207,7 @@ He seems frustrated, though he’s not taking it out on you.
 “I’m their science teacher. And they’re the generation who’s going to need to deal with the effects of climate change. I feel like I’m not doing my job properly if I’m allowing my students to be so misinformed about such a crucial topic.”
 
 → [[Continue-&gt;Slide 10]]
-</tw-passagedata><tw-passagedata pid="27" name="Choice 9.2" tags="" position="925,2175" size="100,100">Choice 9.2 - [“I can’t do that.”]
-
-“I’m sorry, sir, but I can’t do that,” you say. “I’m only allowed to disable filters on specific devices. In this case, that would only be the computers in your school’s library. Since you’re not their parents, I can’t disable filters on those kids’ personal devices.”
+</tw-passagedata><tw-passagedata pid="27" name="Choice 9.2" tags="" position="925,2175" size="100,100">“I’m sorry, sir, but I can’t do that,” you say. “I’m only allowed to disable filters on specific devices. In this case, that would only be the computers in your school’s library. Since you’re not their parents, I can’t disable filters on those kids’ personal devices.”
 
 “You need to think about this,” he says, more firmly than before. “Do you understand how dangerous this could be? Next year, these kids will be in high school. And if things don’t change, I might be sending them into high school, higher education, and beyond with an inaccurate understanding of how the world works.”
 
@@ -259,10 +257,10 @@ The phone calls and the email together make you feel uneasy. Is there something 
     [[Go home-&gt;Choice 12.2]]
 ]
 
-</tw-passagedata><tw-passagedata pid="32" name="Choice 12.2" tags="" position="925,2900" size="100,100">(if: $choice4_2 and $choice7_1 and $choice10_1)[
+</tw-passagedata><tw-passagedata pid="32" name="Choice 12.2" tags="" position="925,2900" size="100,100">(if: $choice4_2 is true and $choice7_1 is true and $choice10_1 is true)[
     [[Continue-&gt;Ending 3]]
 ]
-(else-if:$choice4_1 and $choice7_2 and $choice10_2)[
+(else-if:$choice4_1 is true and $choice7_2 is true and $choice10_2 is true)[
     [[Continue-&gt;Ending 4]]
 ]
 (else:)[
