@@ -9,56 +9,82 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play MaliciousInputs-Revised.</tw-noscript></noscript></tw-story>
-<tw-storydata name="MaliciousInputs-Revised" startnode="28" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="4DAB6441-573C-43C6-A7A5-3E96783199C8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="About Company" tags="" position="600,300" size="100,100">(text-size: 2)[About Blocker Plus]
+<tw-storydata name="MaliciousInputs-Revised" startnode="27" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="4DAB6441-573C-43C6-A7A5-3E96783199C8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/**
+ * Harlowe Audio Library (HAL), by Chapel, v2.3.0
+ * for Harlowe 2.1.0 and higher
+ * Released under the Unlicense, and dedicated to the public domain.
+**/
+#audio-overlay{position:fixed;top:0;right:0;left:0;bottom:0;z-index:100000;background:#111}.lds-ring{display:block;position:relative;top:20%;margin:auto;width:20em;height:20em}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:18em;height:18em;margin:6px;border:6px solid #fff;border-radius:50%;-webkit-animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:#fff transparent transparent transparent}.lds-ring div:nth-child(1){-webkit-animation-delay:-.45s;animation-delay:-.45s}.lds-ring div:nth-child(2){-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-ring div:nth-child(3){-webkit-animation-delay:-.15s;animation-delay:-.15s}@-webkit-keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}input#audio-volume{width:100%;margin:2em 0}span#vol-title{position:relative;bottom:-1em;font-size:1rem;float:left}tw-link#audio-mute{display:inline-block;padding:.3em;width:90%;text-decoration:none;color:#111;background:#eee;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #000}tw-link#audio-mute:hover{opacity:.8}tw-link#audio-mute:active{opacity:.6}tw-link#audio-mute span{display:inline-block;width:1em;position:relative;height:1em;top:.2em;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAABF0lEQVR4Ae2VJVREYRSEB3ftuFUaLhF6I22iF7TgLr1XvAc849CwiBac9Xtm3e97cefp/Pec7+mdH0mZrGtMoBomyAEHfjGHXKg07gNxeUS3BuMAqGZswE7YcOIYgqgG7BFlSQgTAgKysC2jNjQmghFQCOpMxq+QmQgmFATU4kcq/YlgfKB1lALUqFSukRIbEwpy4BTZPM/Bu9TaQ362KAsl56sAtSR+Sgv6RCFdr/gjBYiuj65c3J0eNEmXz95TgybocvmoJj3avf5l59L1iD/WglZCP7/uh8zgeQ6epdahaZENFIPCCFvEYNPW4JdNazBGzhkj6caCbSc02DRRu0+8RR/+rb7wx6D505HxCVKvG0zpp+yknHe8MBDkT/s8AAAAAElFTkSuQmCC);background-size:contain}tw-link#audio-mute.muted span{right:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVR4Ae3WsQ0AMAjAsJ7ez9MTGEmlRGL3BJzPq6prw2DDYMNgw2DDYMOwh1kAMUygQIEC2RejANVxnVE9aDOqJ39GVZWqB5Z3r1ndBX5oAAAAAElFTkSuQmCC)}div#audio-volume{float:left}div#audio-controls{font:100% Georgia,serif;font-size:1.5em;position:fixed;width:8em;height:100%;padding:1em 2em;z-index:10000;top:0;left:0;bottom:0;background:#333;color:#eee;transition:left .3s;text-align:center}div#audio-controls.closed{left:-10.5em}div#audio-controls tw-link#audio-panel-toggle{display:inline-block;width:1.5em;position:absolute;height:1.5em;top:0;right:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAYklEQVR4Ae3MsQFAMAAEQMDEagCgN4EuVTrbPcACeUBugDNeSdMQomI0PmYdTEYD9DA5jcVoBKuxGY1kNQ6jGRSaGaIj8gw1aI/KYVUSNqsSzMpiVT2zMjlVN0fqVW5o2luMGHqkQmD9cPYAAAAASUVORK5CYII=);background-size:contain}div#audio-controls.closed tw-link#audio-panel-toggle{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAZElEQVR4Ae3TpwGAMBQAUfrEeHB0cDhcXBSO7ehlgBw9N8BL/YZO95r6uA/UEbOv+ylfHRJ9z1BWLynKJqmWohyS6ijKOygKCpmjZYqXTTA2xUiCsShGAMw8/Q3ArFgFMHek0w3WCaR74eO2YQAAAABJRU5ErkJggg==)}@media screen and (max-width:800px){div#audio-controls.closed{left:-12em}div#audio-controls.closed tw-link#audio-panel-toggle{right:-1.5em}}div#story-menu{margin:1em 0}tw-link.story-menu{width:100%;display:block;font-weight:400;background:#ccc;font-size:.9em;padding:.1em 0;color:#111;border:1px solid #333}tw-link.story-menu.hide{display:none}tw-link.story-menu:hover{opacity:.8}tw-link.story-menu:active{opacity:.6}input[type=range].hal{-webkit-appearance:none;width:100%;margin:2.25px 0}input[type=range].hal:focus{outline:0}input[type=range].hal::-webkit-slider-runnable-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-webkit-slider-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;-webkit-appearance:none;margin-top:-2.25px}input[type=range].hal:focus::-webkit-slider-runnable-track{background:#444}input[type=range].hal::-moz-range-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-moz-range-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer}input[type=range].hal::-ms-track{width:100%;height:15.5px;cursor:pointer;background:0 0;border-color:transparent;color:transparent}input[type=range].hal::-ms-fill-lower{background:#000;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-fill-upper{background:#111;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;height:15.5px}input[type=range].hal:focus::-ms-fill-lower{background:#111}input[type=range].hal:focus::-ms-fill-upper{background:#444}
+/** End of HAL code */</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
+ * Harlowe Audio Library (HAL), by Chapel, v2.3.0
+ * for Harlowe 2.1.0 and higher
+ * Released under the Unlicense, and dedicated to the public domain.
+**/
+;!function(e){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(e)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(e.substr(0,4))}(navigator.userAgent||navigator.vendor||window.opera),function(){"use strict";window.Fast={filter:function(e,t){for(var o=e.length,n=[],a=0;a<o;a++)t(e[a],a,e)&&n.push(e[a]);return n},forEach:function(e,t){for(var o=e.length,n=0;n<o;n++)t(e[n],n,e)},map:function(e,t){for(var o=e.length,n=new Array(o),a=0;a<o;a++)n[a]=t(e[a],a,e);return n},find:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return e[n]},findIndex:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return n;return-1},some:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return!0;return!1}}}(),window.Chapel=window.Chapel||{},window.Chapel.options={preload:!0,loadDelay:0,muteOnBlur:!0,startingVol:.5,persistPrefs:!0,globalA:!0,showControls:!0,sidebarStartClosed:!0,volumeDisplay:!1,trackLoadLimit:500,totalLoadLimit:8e3,debug:!1},window.Chapel.debug=function(){Chapel.options.debug&&console.log.apply(null,arguments)},function(){"use strict";var n=$("tw-storydata"),o=/(.+?):(.+)/,t=/[\r\n]+/,a=/^["']/,r=/["']$/;function e(e){return Fast.map(Fast.filter(e.split(t),function(e){return e&&e.trim()&&e.includes(":")}),function(e){return e.trim()})}function i(e){return e.trim().replace(a,"").replace(r,"").trim()}function s(e){var t=e.match(o);return t instanceof Array?{key:i(t[1]),value:i(t[2])}:e}var u,l,c,p=n.find('tw-passagedata[name="hal.tracks"]'),d=null,p=(p.length&&(p=e(p.text()),u=[],l=[],Fast.forEach(p,function(e){var e=s(e);"string"==typeof e&&l.push(e),u.push([e.key,(e=e.value,Fast.map(e.split(","),i))])}),l.length&&console.error("Some track definitions could not be parsed:\n"+l.join("\n")+"\nPlease check these definitions and try again."),d=new Map(u)),n.find('tw-passagedata[name="hal.config"]')),m=null;function f(e){var t=n.attr("format-version");if(e)return t;var e=t.split("."),t=e[0],o=e[1],e=e[2],t=Number(t),o=Number(o);return[t=(t=Number.isNaN(t)?3:t)<1?3:t,o=Number.isNaN(o)?3:o,e=Number.isNaN(e)?0:e]}function h(){var e=f();return!(3<=e[0]&&3<=e[1])}function g(t){return function(){var e=[].slice.call(arguments).slice(1),e=t.apply(null,e);return"string"==typeof e||"boolean"==typeof e||"number"==typeof e?e:""}}p.length&&(p=e(p.text()),c={},Fast.forEach(Fast.map(p,function(e){return s(e)}),function(e){c[e.key]=e.value}),m=c),m&&Fast.forEach(Object.keys(m),function(e){var t=e,o=c[e],e=typeof Chapel.options[e];"boolean"==e?"true"===o?Chapel.options[t]=!0:"false"===o&&(Chapel.options[t]=!1):"number"==e?(o=Number(o),Number.isNaN(o)||(Chapel.options[t]=o)):"string"==e&&o&&(Chapel.options[t]=o)});var y=require("macros");if(window.Chapel=window.Chapel||{},window.Chapel.Macros={add:function(o){o&&"object"==typeof o&&Fast.forEach(Object.keys(o),function(e){var t;t=o[e=e],h()?y.add(e,g(t),y.TypeSignature.zeroOrMore(y.TypeSignature.Any)):y.add(e,"Any",g(t),y.TypeSignature.zeroOrMore(y.TypeSignature.Any))})}},window.Chapel.Get=Object.freeze({version:f(),isHarlowe3OrLater:3<=f()[0],storyTitle:n.attr("name"),IFID:n.attr("ifid"),useOldMacroAPI:h(),fromPassage:d}),Chapel.debug("Harlowe Version -> ",Chapel.Get.version.join(".")),Chapel.debug("Harlowe Major Version -> ",Chapel.Get.version[0]),Chapel.debug("Story Title -> ",Chapel.Get.storyTitle),Chapel.debug("Story IFID -> ",Chapel.Get.IFID),Chapel.Get.version[0]<2)throw new Error("The Harlowe Audio Library is only designed to work with Harlowe 2 and 3; you appear to be using Harlowe 1 or an otherwise invalid story format.","get.js -> initialization",176);Chapel.options.storagekey="%%hal-"+Chapel.Get.IFID+"-{"+Chapel.Get.storyTitle+"}",Chapel.debug("Storage Key -> ",Chapel.options.storagekey)}(),function(){"use strict";var t=Chapel.options,e=function(e,t){if(window.localStorage)try{e=""+e,"string"!=typeof t&&(t=JSON.stringify(t)),window.localStorage.setItem(e,t)}catch(e){console.error(e)}},o=function(e){if(window.localStorage)try{return e=""+e,window.localStorage.getItem(e)}catch(e){console.error(e)}},n=function(e){if(window.localStorage)try{e=""+e,window.localStorage.removeItem(e)}catch(e){console.error(e)}},a={loaded:[],classes:{},master:{volume:t.startingVol,mute:!1},groups:{playing:[],looping:[],custom:{}},mute:function(e){a.master.mute=!!e,$(document).trigger({type:":master-mute",mute:!!e})},isMuted:function(){return!!a.master.mute},volume:function(e){e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),a.master.volume=e),$(document).trigger({type:":master-volume",volume:e})},getVolume:function(){return a.master.volume},stopAll:function(){a.classes.Track&&Fast.forEach(a.classes.Track.list,function(e){e.stop()})},audioPlaying:function(){return!!a.groups.playing.length},savePrefs:function(){e(t.storagekey,a.master)},loadPrefs:function(){var e=o(t.storagekey);e&&"object"==typeof e&&e.hasOwnProperty("volume")&&"number"==typeof e.volume&&e.hasOwnProperty("mute")&&"boolean"==typeof e.volume&&(delete a.master,a.master=e)},clearPrefs:function(){n(t.storagekey)}},r={track:[":available",":loaded",":play",":stop",":mute",":volume"],master:[":master-mute",":master-volume"]};var i=r.track.concat(r.master);function s(e,t){if(!e||"string"!=typeof e||!e.trim())return null;e=Fast.filter(Fast.map(e.split(" "),function(e){return(e=":"!==(e=e.split(".")[0])[0]?":"+e:e)+".userland"}),function(e){return(t?i:r.track).includes(e)}).join(" ");return e&&e.trim()?e:null}a.data={parseEvent:s,bail:function(e){throw new Error(e,"audio.js -> bail()",140)}},a.on=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).on(e,t):console.error("Chapel.Audio.on() -> invalid callback")},a.one=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).one(e,t):console.error("Chapel.Audio.one() -> invalid callback")},a.off=function(e){(e=s(e,!0))&&$(document).off(e)},t.persistPrefs&&($(document).on(":master-mute",a.savePrefs),$(document).on(":master-volume",a.savePrefs)),$(document).on(":play",function(e){e.track.addToGroup("playing")}),$(document).on(":stop",function(e){e.track.removeFromGroup("playing")}),t.muteOnBlur&&$(window).on("blur",function(){a.isMuted()||(a.mute(!0),$(window).one("focus",function(){a.mute(!1)}))}),a.parseEvent=s,window.Chapel=window.Chapel||{},window.Chapel.Audio=a}(),function(){"use strict";var a=Chapel.Audio,o=a.data.pareEvent,r=a.data.bail,i=Chapel.options,t=$(document.createElement("div")).attr("id","audio-container").css("display","none").appendTo(document.body),s={aac:"audio/aac",caf:"audio/x-caf","x-caf":"audio/x-caf",mp3:'audio/mpeg; codecs="mp3"',mpeg:'audio/mpeg; codecs="mp3"',m4a:"audio/mp4",mp4:"audio/mp4","x-m4a":"audio/mp4","x-mp4":"audio/mp4",oga:"audio/ogg",ogg:"audio/ogg",opus:'audio/ogg; codecs="opus"',wav:"audio/wav",wave:"audio/wav",weba:"audio/webm",webm:"audio/webm"};function u(e,t,o){this instanceof u||r("Track: called without `new` operator"),e||r("Track: no id specified"),"string"!=typeof e&&r("Track: track id is not a string"),t&&(!Array.isArray(t)||t.length)||r("Track: no sources specified"),o?t=[].slice.call(arguments).slice(1):"string"==typeof t&&(t=[t]);var n=$(document.createElement("audio"));Fast.forEach(t,function(e){$(document.createElement("source")).attr({src:e,type:(e=(e=(e=(e=(e=e).split("."))[e.length-1]).includes("?")?e.split("?")[0]:e).toLowerCase().trim(),Object.keys(s).includes(e)||r('Track: unsupported file type "'+e+'"'),s[e])}).appendTo(n)}),n.attr({"data-track":"id","data-volume":1,"data-mute":!1}).one("canplaythrough.hal",function(){a.loaded.push(e)}),i.preload&&n.attr("preload","auto"),n[0].volume=+a.master.volume,this.id=e,this.$el=n,this.unwrap=n[0],this.sources=t}Object.assign(u,{list:[],is:function(e){return e instanceof u},has:function(t){return Fast.some(u.list,function(e){return e.id===t})},emit:function(e,t){$(document).trigger({type:e,track:t}),t.emit(e)},add:function(e,t,o){var n=new u(e,t=o?[].slice.call(arguments).slice(1):t);return u.list.push(n),n.$el.on("canplay",function(){u.emit(":available",n)}),n.$el.on("canplaythrough",function(){u.emit(":loaded",n)}),n.attach(),n},renew:function(){Fast.forEach(u.list,function(e){e.mute(e.isMuted()),e.volume(e.getVolume())})},getIdx:function(t){return Fast.findIndex(u.list,function(e){return e.id===t})},get:function(t){var e=Fast.find(u.list,function(e){return e.id===t});if(e)return e;throw new ReferenceError('There is no track with the id "'+t+'". Please check your spelling and capitalization.',"track.js -> Track.get()",155)},removeFromDOM:function(e){(e="string"==typeof e?u.get(e):e)&&u.is(e)?e.unattach():t.remove()},_runOnMultiple:function(e,t,o){e instanceof Array&&u.prototype.hasOwnProperty(t)&&Fast.forEach(e,function(e){(e=u.is(e)?e:u.get(e)||null)&&e[t].apply(e,o&&o instanceof Array?o:[])})}}),Object.assign(u.prototype,{constructor:u,emit:function(e){this.$el.trigger({type:e,track:this})},clone:function(){return new u(this.id,this.sources)},isAttached:function(){return $.contains(t[0],this.unwrap)},attach:function(){return this.isAttached()||this.$el.appendTo(t),this},unattach:function(){return this.isAttached()&&this.$el.remove(),this},isPlaying:function(){return!this.unwrap.paused},play:function(){var e=this;return this.unwrap.play(),u.emit(":play",this),this.$el.on("ended",function(){e.unwrap.loop||(e.unwrap.currentTime=0,u.emit(":stop",e))}),this},playWhenPossible:function(){var t=this;return this.unwrap.play().then(function(){u.emit(":play",t),t.$el.on("ended",function(){t.unwrap.loop||(t.unwrap.currentTime=0,u.emit(":stop",t))})},function(e){$(document).one("click mousedown keydown touchstart",function(){t.play()})}).catch(function(e){console.error(e)}),this},forcePlay:function(){var e=this,t=$(document.createElement("a")).css("display","none").appendTo(document.body).on("click",function(){e.play()});setTimeout(function(){t.trigger("click")},safeAudioStart)},pause:function(){return this.unwrap.pause(),u.emit(":pause",this),this},stop:function(){return this.unwrap.pause(),this.unwrap.currentTime=0,u.emit(":stop",this),this},mute:function(e){return this.$el.attr("data-mute",e=!!e),a.master.mute?this.unwrap.muted=!0:this.unwrap.muted=e,u.emit(":mute",this),this},isMuted:function(){var e=this.$el.attr("data-mute");return"boolean"==typeof e?e:"false"!==e},toggleMute:function(){return this.mute(!this.isMuted()),this},volume:function(e){return e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),this.$el.attr("data-volume",e),this.unwrap.volume=e*a.master.volume),u.emit(":volume",this),this},getVolume:function(){return Number(this.$el.attr("data-volume"))},addToGroup:function(e,t){var o=this,t=(t?a.groups.custom:a.groups)[e];return Fast.some(t,function(e){return o.id===e.id})||t.push(this),this},removeFromGroup:function(e,t){var o=this,t=(t?a.groups.custom:a.groups)[e],e=Fast.findIndex(t,function(e){return e.id&&e.id===o.id});return t.splice(e,1),this},loop:function(e){return this.unwrap.loop=!!e,this.unwrap.loop?this.addToGroup("looping"):this.removeFromGroup("looping"),this},isLooping:function(){return!!this.unwrap.loop},toggleLoop:function(){return this.loop(!this.isLooping()),this},seek:function(e){return e<0?e=this.unwrap.duration-e:e>this.unwrap.duration&&(e=this.unwrap.duration),this.unwrap.currentTime=e,this},fadeIn:function(e){var t=this,o=(e=e||1,this.getVolume());return this.volume(0),this.play(),this.$el.animate({volume:o*a.master.volume},1e3*e,function(){t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeOut:function(e){e=e||1;var t=this,o=this.getVolume();return this.$el.animate({volume:0},1e3*e,function(){t.stop(),t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeTo:function(e,t){var o=this;if(e=e||1,t=Number(t),!Number.isNaN(t))return 1<t?t=1:t<0&&(t=0),this.$el.animate({volume:t*a.master.volume},1e3*e,function(){o.volume(t),u.emit(":volume",o),u.emit(":fade",o)}),this;alert("ivalid volume level")},delay:function(e,t){var o=this;"function"==typeof t&&(e=Number(e),(Number.isNaN(e)||e<0)&&(e=0),setTimeout(function(){t.call(o,o,e)},e))},on:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.on() -> invalid callback"),this;(e=o(e))&&this.$el.on(e,t)},one:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.one() -> invalid callback"),this;(e=o(e))&&this.$el.one(e,t)},off:function(e){(e=o(e))&&this.$el.off(e)}}),a.classes.Track=u,a.newTrack=function(){try{return u.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.newTrack() -> see the console for more information.")}},a.track=function(e){try{return u.get(e)}catch(e){console.error(e.message),alert("Error in A.track() -> see the console for more information.")}},$(document).on(":master-mute",u.renew),$(document).on(":master-volume",u.renew)}(),function(){"use strict";var n=Chapel.Audio,a=n.classes.Track,o=(n.data._extend,/(play)?list:(.+)/i);n.createGroup=function(e,t,o){o=o?[].slice.call(arguments).slice(1):t;t=e,(e=o)&&Array.isArray(e)||(e=[]),n.groups.custom[t]=Fast.map(e,function(e){return a.get(e)})},n.group=function(e){if(!(this instanceof n.group))return new n.group(e);if(Object.keys(n.groups.custom).includes(e))this.members=n.groups.custom[e];else{if(!(n.groups[e]&&n.groups[e]instanceof Array))throw new ReferenceError('There is no group with the id "'+id+'". Please check your spelling and capitalization.',"group.js -> A.group()",29);this.members=n.groups[e]}var t;o.test(e)&&(t=e.match(o)[2])&&t.trim()&&(this.members=n.playlist(t).tracks),Array.isArray(this.members)||(this.members=[],console.error('Could not find members for track group "'+e+'"!'))},Object.assign(n.group,{is:function(e){return this instanceof n.group},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);n=[e.members,t,o];a._runOnMultiple.apply(null,n)}}),Object.assign(n.group.prototype,{constructor:n.group,_run:function(){n.group._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},play:function(){return this._run("play"),this},pause:function(){return this._run("pause"),this},stop:function(){return this._run("stop"),this},mute:function(e){return this._run("mute",e),this},volume:function(e){return this._run("volume",e),this},loop:function(e){return this._run("loop",e),this}})}(),function(){"use strict";var e=Chapel.Audio,a=e.classes.Track;e.data._extend;function n(e,t){if(!(this instanceof n))return new n(e,t);this.id=e,this.tracks=t.map(function(e){return a.get(e)}),this.looping=!1,this.current="",this.playing=!1}Object.assign(n,{list:{},is:function(e){return e instanceof n},add:function(e,t,o){return o&&(t=[].slice.call(arguments).slice(1)),n.list[e]=new n(e,t),n.list[e]},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);n=[e.tracks,t,o];a._runOnMultiple.apply(null,n)}}),Object.assign(n.prototype,{constructor:n,clone:function(){return new n(this.id,this.tracks.map(function(e){return e.id}))},_run:function(){n._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},volume:function(e){return this._run("volume",e),this},mute:function(e){return this._run("mute",e),this},shuffle:function(){for(var e,t,o=this.tracks,n=o.length-1;0<n;n--)e=Math.floor(Math.random()*(n+1)),t=o[n],o[n]=o[e],o[e]=t;return this.tracks=o,this},random:function(){return this.tracks[Math.floor(Math.random()*this.tracks.length)]},isPlaying:function(){return this.playing},nowPlaying:function(){return a.get(this.current)},play:function(e){var t=this;if((e=e||(t.current?Fast.findIndex(t.tracks,function(e){return e.id===t.current}):0))>=t.tracks.length&&t.looping)e=0;else if(e>=t.tracks.length)return t.current="",void(t.playing=!1);var o=t.tracks[e],n=o.isLooping();return o.loop(!1),o.play(),t.playing=!0,setTimeout(function(){o.isPlaying()||(t.playing=!1)},20),t.current=o.id,o.$el.one("ended.playlist",function(){e++,o.loop(n),t.play(e)}),t},loop:function(e){return this.looping=!!e,this},isLooping:function(){return this.looping},stop:function(){var e;return this.current&&this.isPlaying()?(e=this.nowPlaying())&&(e.stop(),e.$el.off(".playlist")):this._run("stop"),this.current="",this.playing=!1,this},pause:function(){var e;return this.current&&this.isPlaying()&&((e=this.nowPlaying())&&e.pause()),this.playing=!1,this}}),e.classes.Playlist=n,e.createPlaylist=function(){try{n.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}},e.playlist=function(e){try{var t=n.list[e]||null;if(t)return t;throw new ReferenceError('There is no playlist with the id "'+e+'". Please check your spelling and capitalization.',"list.js -> A.playlist()",171)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}}}(),function(){"use strict";var t=Chapel.Audio,o=t.classes.Track,n=t.classes.Playlist;function a(t,o){if("object"!=typeof o)throw new TypeError("Invalid extension.","extensions.js -> _extend()",8);Fast.forEach(Object.keys(o),function(e){if(void 0!==t[e])throw new Error('Invalid extension: cannot clobber existing property "'+e+'".',"extensions.js -> _extend()",8);t[e]=o[e]})}t.extend=function(e){a(Audio,e)},o.extend=function(e){a(o,e)},o.extendPrototype=function(e){a(o.prototype,e)},t.extendTrack=o.extend,t.extendTrackProto=o.extendPrototype,t.group.extend=function(e){a(t.group,e)},t.group.extendPrototype=function(e){a(t.group.prototype,e)},t.extendGroup=t.group.extend,t.extendGroupProto=t.group.extendPrototype,n.extend=function(e){a(n,e)},n.extendPrototype=function(e){a(n.prototype,e)},t.extendPlaylist=n.extend,t.extendPlaylistProto=n.extendPrototype}(),function(){"use strict";var e,t,o,n,a,r,i,s=Chapel.options;s.showControls&&(e=$(document.createElement("div")).attr("id","story-menu").css("display","none"),t=$(document.createElement("span")).attr("id","vol-title").append("Volume"),s.volumeDisplay||t.css("display","none"),o=$(document.createElement("input")).attr({id:"audio-volume",type:"range",min:1,max:99,step:1,title:"Volume"}).addClass("hal"),(a=Math.trunc(100*window.Chapel.Audio.master.volume))<0?a=0:100<a&&(a=100),o.attr("value",a),n=function(e){void 0===e&&(e=o.val()),t.empty().append("Volume "+e)},o.on("input",function(){window.Chapel.Audio.volume($(this).val()/100),n($(this).val())}),a=$(document.createElement("tw-link")).attr({id:"audio-mute",title:"Mute"}).append("Mute <span></span>").on("click",function(e){e.preventDefault(),$(this).toggleClass("muted"),Chapel.Audio.mute(!Chapel.Audio.isMuted())}),Chapel.Audio.isMuted()&&a.addClass("muted"),r=$(document.createElement("tw-link")).attr("id","audio-panel-toggle").on("click",function(e){e.preventDefault(),i.toggleClass("closed")}),i=$(document.createElement("div")).attr("id","audio-controls").append(e,t,o,a,r).appendTo(document.body),s.sidebarStartClosed&&i.addClass("closed"),window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.controls={$panel:i,$volume:o,$mute:a,$user:e,close:function(){i.addClass("closed")},open:function(){i.removeClass("closed")},toggle:function(){i.toggleClass("closed")},hide:function(){i.css("display","none")},show:function(){i.css("display","block")},updateVolume:n})}(),function(){"use strict";var s=Chapel.options,t=State,e=$(document.createElement("div")).attr("id","audio-overlay").css("display","none").appendTo(document.body);function o(){e.css("display","block").append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>')}function u(){e.fadeOut(function(){e.empty()})}window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.loadScreen={show:o,dismiss:u,kill:function(){$("#audio-overlay").remove()}},window.Chapel.Audio.$overlay=e,window.Chapel.Audio.preload=function(){var a,e,r,i;Chapel.debug("This is a mobile browser -> ",$.browser.mobile),t.pastLength||t.futureLength||$.browser.mobile||($(document).ready(function(){o()}),a=100+s.loadDelay,e=Chapel.Audio.classes.Track.list,r=Chapel.Audio.loaded,e.length?(i=Fast.map(e,function(e){return e.id}),0<s.totalLoadLimit&&setTimeout(function(){u()},s.totalLoadLimit),function e(){var t,o,n;i.length?(t=i.shift(),r.includes(t)?e():(o=Chapel.Audio.classes.Track.get(t)).unwrap.readyState<2?(n=!1,o.$el.one("canplaythrough.hal",function(){e(),n=!0}),setTimeout(function(){n||(o.$el.off("canplaythrough.hal"),e())},s.trackLoadLimit)):(r.includes(t)||r.push(t),e())):setTimeout(u,a)}()):setTimeout(u,a))}}(),function(){"use strict";var e,t,o=Chapel.options.storagekey+"_hal_restart_",n=(Chapel.debug("HAL Session Key -> ",o),window.sessionStorage?(Chapel.debug("Session Storage Available"),e=function(e,t){window.sessionStorage.setItem(o+e,t)},t=function(e){return window.sessionStorage.getItem(o+e)}):(Chapel.debug("Session Storage Unavailable"),e=function(){},t=function(){},console.warn("Session storage is unavailable...")),{save:e,load:t});window.Chapel.Audio.state={_store:n,saveTracks:function(){var e;try{e=Fast.map(Chapel.Audio.classes.Track.list,function(e){return{id:e.id,sources:e.sources}}),Chapel.debug("Session Saved (Tracks) -> ",e),e=JSON.stringify(e),n.save("tracks",e)}catch(e){console.error(e.message)}},loadTracks:function(){var e;try{e=(e=n.load("tracks"))&&JSON.parse(e),Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Tracks) -> ",e),Fast.forEach(e,function(e){e.id&&e.sources&&!Chapel.Audio.classes.Track.has(e.id)?Chapel.Audio.newTrack.apply(null,[e.id].concat(e.sources)):Chapel.debug("Track reloading skipped.")}))}catch(e){console.error(e.message)}},savePlaylists:function(){try{var o=Chapel.Audio.classes.Playlist.list,e=Fast.map(Object.keys(o),function(e){var t={};return t.tracks=Fast.map(o[e].tracks,function(e){return e.id}),t.id=o[e].id,t});Chapel.debug("Session Saved (Playlists) -> ",e),e=JSON.stringify(e),n.save("playlists",e)}catch(e){console.error(e.message)}},loadPlaylists:function(){var e;try{(e=(e=n.load("playlists"))&&JSON.parse(e))&&Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Playlists) -> ",e),Fast.forEach(e,function(e){e.id&&e.tracks&&Chapel.Audio.createPlaylist(e.id,e.tracks)}))}catch(e){console.error(e.message)}},saveGroups:function(){var t;try{t={},Fast.forEach(Object.keys(Chapel.Audio.groups.custom),function(e){t[e]=Fast.map(Chapel.Audio.groups.custom[e],function(e){return"string"==typeof e?e:e.id})}),Chapel.debug("Session Saved (Groups) -> ",t),t=JSON.stringify(t),n.save("groups",t)}catch(e){console.error(e.message)}},loadGroups:function(){var t;try{(t=(t=n.load("groups"))&&JSON.parse(t))&&"object"==typeof t&&(Chapel.debug("Session Loaded (Groups) -> ",t),Fast.forEach(Object.keys(t),function(e){Fast.map(t[e],function(e){return Chapel.Audio.classes.Track.get(e)})}),Chapel.Audio.groups.custom=t)}catch(e){console.error(e.message)}}}}(),function(){"use strict";var e=Chapel.options;e.globalA&&void 0===window.A&&(Chapel.debug("Created global A interface."),window.A=window.Chapel.Audio),Chapel.Get.fromPassage&&(Chapel.debug("Loading tracks from track def special passage -> ",Chapel.Get.fromPassage),Chapel.Get.fromPassage.forEach(function(e,t){Chapel.Audio.newTrack.apply(null,[t].concat(e))})),$(document).on("unload",function(){Chapel.debug("User Prefs Saved"),window.Chapel.Audio.savePrefs()}),Chapel.Audio.classes.Track.renew(),Chapel.Audio.controls&&Chapel.Audio.controls.updateVolume(),Chapel.Get.isHarlowe3OrLater&&($(window).on("unload",function(){Chapel.debug("HAL State Saved"),Chapel.Audio.state.saveTracks(),Chapel.Audio.state.savePlaylists(),Chapel.Audio.state.saveGroups()}),Chapel.debug("HAL State Loaded"),Chapel.Audio.state.loadTracks(),Chapel.Audio.state.loadPlaylists(),Chapel.Audio.state.loadGroups()),e.persistPrefs&&(Chapel.debug("User Prefs Loaded"),Chapel.Audio.loadPrefs())}(),function(){"use strict";var i,s,e,u,t;Chapel.options.showControls&&(i=Engine,s=Chapel.Audio.controls.$user,e=function(){return"none"!==s.css("display")},u=function(){return e()||s.css("display","block"),s},t=function(){return e()&&s.css("display","none"),s},Chapel.Audio.menu={hide:t,show:u,isShown:e,links:{add:function(e,t,o){var n,a;if(!e||"string"!=typeof e)return r="undefined",alert(r),void console.error(r);o||"function"!=typeof t?(t&&"string"==typeof t&&(n=t),o&&"function"==typeof o&&(a=o)):(a=t,n=null);var r=$(document.createElement("tw-link")).append(e).attr({tabindex:"0",name:e.toLowerCase().trim()}).on("click",function(){n&&i.goToPassage(n),a&&a()}).addClass("story-menu").appendTo(s);return u(),r},clear:function(){return s.empty(),t()},hide:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').addClass("hide")},show:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').removeClass("hide")},toggle:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').toggleClass("hide")},remove:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').remove()}}})}(),function(){"use strict";var n=Chapel.Audio;function o(e){return e&&"function"==typeof e}function a(e,t){if(!e||"string"!=typeof e)return null;switch(e=e.toLowerCase().trim()){case"isplaying":e="isPlaying";break;case"playwhenpossible":e="playWhenPossible";break;case"ismuted":e="isAMuted";break;case"togglemute":e="toggleMute";break;case"getvolume":e="getVolume";break;case"islooping":e="isLooping";break;case"toggleloop":e="toggleLoop";break;case"fadein":e="fadeIn";break;case"fadeout":e="fadeOut";break;case"fadeto":e="fadeTo";break;case"stopall":e="stopAll"}if("isPlaying"===e&&"master"===t&&(e="audioPlaying"),"group"===t){if(o(n.group.prototype[e]))return e}else if("master"===t){if(o(n[e]))return e}else if(o(n.classes[t].prototype[e]))return e;throw new ReferenceError('Cannot run the command: "'+e+'" on the API "'+t+'". The command may be invalid, or this may be a bug in HAL.',"macros.js -> getCommand()",10)}window.Chapel.Macros.add({newtrack:function(){var e=[].slice.call(arguments);try{return n.newTrack.apply(null,e)}catch(e){alert("Error in the (newtrack:) macro: "+e.message)}},newplaylist:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createPlaylist(e,t)}catch(e){alert("Error in the (newplaylist:) macro: "+e.message)}},newgroup:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createGroup(e,t)}catch(e){alert("Error in the (newgroup:) macro: "+e.message)}},masteraudio:function(e){try{return e=a(e,"master"),n[e].apply(null,[].slice.call(arguments).slice(1))}catch(e){alert("Error in the (masteraudio:) macro: "+e.message)}},track:function(e,t){try{var o=n.track(e);return o[t=a(t,"Track")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (track:) macro: "+e.message)}},playlist:function(e,t){try{var o=n.playlist(e);return o[t=a(t,"Playlist")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (playlist:) macro: "+e.message)}},group:function(e,t){try{var o=n.group(e);return o[t=a(t,"group")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (group:) macro: "+e.message)}}})}();
+/** End of HAL code */</script><tw-passagedata pid="1" name="About Company" tags="" position="600,300" size="100,100">(text-size: 2)[About Blocker Plus]
 
 Blocker Plus has a simple mission: to make the internet safer for kids. We believe online protection should be smart, seamless, and contantly evolving.
 
-That&#39;s why we built Blocker Plus: intelligent content filtration software that&#39;s easy-to-use and effective, giving kids the protection they need from inappropriate and harmful content.
+That&#39;s why we built Blocker Plus, the intelligent content filtration software that&#39;s easy-to-use and effective, giving kids the protection they need from inappropriate and harmful content.
 
 Powered by cutting edge artificial intelligence and machine learning, and with full compliance with the //&#39;&#39;Children&#39;s Internet Protection Act (CIPA)&#39;&#39;//, Blocker Plus is trusted by schools, libraries, and parents to ensure kids can use the internet safely and effectively.
 
+(if:(history: where its name contains &quot;Parent Article&quot;)&#39;s length is 0)[
+⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]].](if:(history: where its name contains &quot;Shareholder Article&quot;)&#39;s length is 0)[
+⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]]
 
-(if:(history: where its name contains &quot;Parent Article&quot;)&#39;s length is 0)[⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]].]
+⮕ [[Start the job.|Start Job]]
 
-(if:(history: where its name contains &quot;Shareholder Article&quot;)&#39;s length is 0)[⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]]
-
-⮕ [[Start the job.|Start Job]]</tw-passagedata><tw-passagedata pid="2" name="Answer Second Call - Follow Protocol" tags="" position="100,1800" size="100,100">(set: $choice10_1 to true)
-“&quot;I&#39;m only permitted to modify the library&#39;s devices.&quot;, you respond.
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="2" name="Answer Second Call - Follow Protocol" tags="" position="100,1800" size="100,100">(set: $followed_protocol_2 to true)&quot;I&#39;m only permitted to modify the library&#39;s devices.&quot;, you respond.
 
 “This is ridiculous,” the teacher responds. “I mean, it’ll help me, but what about every other student and school in the country which uses the same software?&quot;
 
-&quot;Sorry sir, like I said, I am not permi-&quot;, you try to respond before hearing him hang up abruptly.
+&quot;Sorry ma&#39;am, like I said, I am not permi-&quot;, you try to respond before hearing her hang up abruptly.
 
-Hopefully he can understand that you can&#39;t risk being reprimanded and losing your job.
+Hopefully she can understand that you can&#39;t risk being reprimanded and losing your job.
 
 You&#39;re able to find the relevant climate change-related filters on the school library’s computers and disable them. Hopefully, the science teacher will at least appreciate this.
 
-→ [[Continue working.-&gt;End Work Day]]</tw-passagedata><tw-passagedata pid="3" name="Answer Second Call - Break Protocol" tags="" position="300,1800" size="100,100">(set: $choice10_2 to true)
-&quot;You&#39;re right. I&#39;ll be sure to look into this for all users.&quot;
+⮕ [[Continue working.-&gt;End Work Day]]
 
-“Really?” comes the man’s voice, suddenly much more energized. “That’s great to hear. You’re doing these kids a real service here.” He seems very happy.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-second-call-follow-protocol&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="3" name="Answer Second Call - Break Protocol" tags="" position="300,1800" size="100,100">(set: $followed_protocol_2 to false)&quot;You&#39;re right. I&#39;ll be sure to look into this for all users.&quot;
+
+“Really?” comes the woman’s voice, suddenly much more energized. “That’s great to hear. You’re doing these kids a real service here.” She seems very happy.
 
 &quot;It&#39;s only right. Take care now&quot;, you respond and end the call.
  
-You find the applicable filter and disable it on all the devices you can modify.
+You find the applicable filter and disable it on all the devices you&#39;re able to modify.
 
-→ [[Continue working.-&gt;End Work Day]]</tw-passagedata><tw-passagedata pid="4" name="Investigate Issue" tags="" position="400,2200" size="100,100">You decide to investigate.
+⮕ [[Continue working.-&gt;End Work Day]]
 
-One of your colleagues works for Human Relations at Blocker Plus. A few days prior, you had helped this colleague log into their account in order to disable a filter on their own machine - Blocker Plus encouraged its employees to download the filtration software in order to test and show support.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-second-call-break-protocol&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="4" name="Investigate Issue" tags="" position="400,2200" size="100,100">You decide to investigate.
 
-You still have their login information. As an HR employee, your colleague must have some more discussions about the state of the company and what they know about the software malfunctioning.
+One of your colleagues works for Human Relations at Blocker Plus. A few days ago, you  helped them log into their account to disable a filter on their own computer - Blocker Plus encourages employees to install the software both to test and show support for the company.
 
-→ [[Log in to their email.-&gt;Login to Email]]</tw-passagedata><tw-passagedata pid="5" name="Contact Shareholder" tags="Whistleblower-Ending Lose-Job" position="300,2500" size="100,100">You decide to contact a shareholder.
+You still have their login information. As an HR employee, your colleague may have access to internal discussions about the company&#39;s situation and what staff know regarding the recent software malfunctions.
+
+⮕ [[Log in to their email.-&gt;Login to Email]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;investigate-issue&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="5" name="Contact Shareholder" tags="" position="300,2500" size="100,100">You decide to contact a shareholder.
 
 You take a photo of the email and find a top shareholder&#39;s contact information online. You include evidence of your employment, the photo of the email, and everything else you know about the cover up.
 
-→ [[Send the email.-&gt;Ending 2]]</tw-passagedata><tw-passagedata pid="6" name="Back Out" tags="Unsettle-Worker-Ending Keep-Job-Ending" position="600,2400" size="100,100">No, you wouldn’t do that. 
+⮕ [[Send the email.-&gt;Ending 2]]
 
-Not only would you risk getting your colleague in trouble, but you would almost certainly lose your job if you were found out. That wasn’t something you were willing to risk.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;contact-shareholder&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="6" name="Back Out" tags="" position="600,2400" size="100,100">Contact the shareholder? No... you wouldn&#39;t dare to do that.
+
+Not only would you risk getting your colleague in trouble, but you would almost certainly lose your job if you did so. That wasn’t something you were willing to risk.
 
 As quickly as you had logged in, you log out of your colleague’s email and delete their login information for good measure. With a firm click, you turn off your monitor, feeling like you need to get out of this room and get your mind off of work.
 
-→ [[Go home.-&gt;Ending 4]]</tw-passagedata><tw-passagedata pid="7" name="Answer First Call" tags="" position="400,500" size="100,100">(set: $choice5_1 to true)(set: $choice5_2 to false)You pick up the phone.
+⮕ [[Go home.-&gt;Ending 4]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;back-out&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="7" name="Answer First Call" tags="" position="400,500" size="100,100">(set: $answered_first_call to true)You pick up the phone.
 
 You answer with //“Hello?&quot;//
 
@@ -76,14 +102,19 @@ After doing so, you ask //“So which filter would you like disabled?”//
 
 You glance over the list of filters on your screen, which range from “Mild Profanity” to “Sexually Explicit Content”.
 
-“Well, I don’t know exactly which filter it is… that&#39;s why I couldn&#39;t do it myself” she says, her voice trailing off. 
+//“Well, I don’t know exactly which filter it is… that&#39;s why I couldn&#39;t do it myself”// she says, her voice trailing off. 
 
-→ [[“What kind of content is it?”-&gt;Answer First Call Cont&#39;d]]</tw-passagedata><tw-passagedata pid="8" name="Ignore First Call" tags="Lazy-Worker-Ending" position="550,600" size="100,100">(set: $choice5_2 to true)(set: $choice5_1 to true)(set: $choice7_1 to false)You don’t recognize the number, so you decide to let it go to voicemail. 
+⮕ [[“What kind of content is it?”-&gt;Answer First Call Cont&#39;d]]
 
-→ [[Continue with your work. -&gt;Continue Job]]</tw-passagedata><tw-passagedata pid="9" name="Answer First Call: Follow Protocol" tags="Keep-Job-Ending" position="200,800" size="100,100">(set: $choice7_1 to true)
-“Sorry ma&#39;am, but I can only disable individual device filters.”
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-first-call&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="8" name="Ignore First Call" tags="" position="550,600" size="100,100">(set: $answered_first_call to false)(set: $followed_protocol_1 to false)You don’t recognize the number, so you decide to let it go to voicemail. 
 
-You hear her sigh disappointedly, “Alright,” comes her short reply. “Thanks.” 
+⮕ [[Continue with your work. -&gt;Continue Job]]
+
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="9" name="Answer First Call: Follow Protocol" tags="" position="200,800" size="100,100">(set: $followed_protocol_1 to true)
+//“Sorry ma&#39;am, but I can only disable individual device filters.”//
+
+You hear her sigh disappointedly, //“Alright,”// comes her short reply. //“Thanks.”// 
 
 Before you can wish her a good day, you hear the receiver hang up. 
 
@@ -91,17 +122,23 @@ You don’t want to risk your job prying around where you shouldn&#39;t. Could s
 
 You decide to put this ethical dilemma out of your mind for the time being and continue with your job.
 
-→ [[Continue working.-&gt;Continue Job]]</tw-passagedata><tw-passagedata pid="10" name="Answer First Call: Break Protocol" tags="" position="600,800" size="100,100">(set: $choice7_2 to true)(set: $choice7_1 to false)“I&#39;ll look into this and try to disable this filter for everyone,&quot; you say to her.
+⮕ [[Continue working.-&gt;Continue Job]]
 
-&quot;Thank you so much! I hope you can get to the bottom of this, not just for my son but for everyone who uses Blocker Plus&quot;, she replies.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-first-call-follow-protocol&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="10" name="Answer First Call: Break Protocol" tags="" position="600,800" size="100,100">(set: $followed_protocol_1 to false)//&quot;I&#39;ll look into this and try to disable this filter for everyone,&quot;// you say to her.
 
-&quot;No worries. Bye for now&quot;, you respond and end the call.
+//&quot;Thank you so much! I hope you can get to the bottom of this, not just for my son but for everyone who uses Blocker Plus&quot;//, she replies.
+
+//&quot;No worries. Bye for now&quot;//, you respond and end the call.
 
 This is odd. You don&#39;t recall any filters or training materials mentioning blocking vaccine information.
 
-→ [[Ask your supervisor about this.-&gt;Call Supervisor]]
+⮕ [[Ask your supervisor about this.-&gt;Call Supervisor]]
 
-→ [[Must just be a glitch on her device. I&#39;ll look into this later.-&gt;Continue Job]]</tw-passagedata><tw-passagedata pid="11" name="Answer Second Call" tags="" position="200,1500" size="100,100">(set: $choice8_2 to false)You pick up the phone.
+⮕ [[Must just be a glitch on her device. I&#39;ll look into this later.-&gt;Continue Job]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-first-call-break-protocol&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="11" name="Answer Second Call" tags="" position="200,1500" size="100,100">(set: $answered_second_call to true)You pick up the phone.
 
 “Hello, this is a local Blocker Plus system administrator speaking. How may I help you?”, you say.
 
@@ -109,9 +146,15 @@ This is odd. You don&#39;t recall any filters or training materials mentioning b
 
 “I’m not very happy about what that Blocker Plus system’s been doing for my eighth graders. I assigned them a project a couple of weeks ago, and the majority of them failed it.&quot;, says the teacher.
 
-→ [[“What’s the software’s role in this?&quot;-&gt;Answer Second Call Cont&#39;d]]</tw-passagedata><tw-passagedata pid="12" name="Ignore Second Call" tags="" position="600,1500" size="100,100">(set: $choice8_2 to true)Another call, and within such a short period of time? This isn’t typical, and frankly, you don’t particularly want to deal with it. You decide to let the call go to voicemail.
+⮕ [[“What’s the software’s role in this?&quot;-&gt;Answer Second Call Cont&#39;d]]
 
-→ [[Continue working.-&gt;End Work Day]]</tw-passagedata><tw-passagedata pid="13" name="Ending 1" tags="" position="100,2800" size="100,100">You decide to clock out for the day, satisfied with the little amount of work you did despite ignoring your calls.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-second-call&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="12" name="Ignore Second Call" tags="" position="600,1500" size="100,100">(set: $answered_second_call to false)(set: $followed_protocol_2 to false)Another call, and within such a short period of time? This isn’t typical, and frankly, you don’t particularly want to deal with it. You decide to let the call go to voicemail.
+
+⮕ [[Continue working.-&gt;End Work Day]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;ignore-second-call&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="13" name="Ending 1" tags="" position="100,2800" size="100,100">You decide to clock out for the day, satisfied with the little amount of work you did despite ignoring your calls.
 
 Later in the week, you receive a (text-color:red)[Notice of Suspension] from your boss for neglecting too many of your duties. The notice comes as a surprise, but what surprises you more is the drama that ensues in the following weeks:
 
@@ -119,13 +162,19 @@ Shareholders are pulling out of Blocker Plus left and right. The company’s sto
 
 You have no clue what’s going on, and it leaves you feeling unsettled. Perhaps you should have paid a bit more attention at your job.
 
-[[End-&gt;End 1]]</tw-passagedata><tw-passagedata pid="14" name="Ending 2" tags="" position="300,2700" size="100,100">The week after you sent the email is the most stressful of your life. Could you really have gotten away with something like this?
+[[End-&gt;End 1]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;ending-1&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="14" name="Ending 2" tags="" position="300,2700" size="100,100">The week after you sent the email is the most stressful of your life. Could you really have gotten away with something like this?
 
 You work as if nothing had happened.
 
 Out of the blue, an invite for a meeting pops up in your calendar. It&#39;s mandatory, and you&#39;re the only participant. Uh oh. 
 
-→ [[Join the call.-&gt;Ending 2.1]]
+⮕ [[Join the call.-&gt;Ending 2.1]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;ending-2&#39;, &#39;play&#39;)
 
 </tw-passagedata><tw-passagedata pid="15" name="Ending 3" tags="" position="500,2800" size="100,100">You continue your work at Blocker Plus, day in and day out. 
 
@@ -143,7 +192,9 @@ The lawsuit is massive. Schools and libraries abandon Blocker Plus in droves, an
 
 (text-color:red)[In a round of mass layoffs and restructuring, you lose your job.]
 
-[[End-&gt;End 3]]</tw-passagedata><tw-passagedata pid="16" name="Ending 4" tags="" position="700,2800" size="100,100">You go home and try to put the day behind you.
+[[End-&gt;End 3]]
+
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="16" name="Ending 4" tags="" position="700,2800" size="100,100">You go home and try to put the day behind you.
 
 Weeks later, the news breaks: 
 
@@ -153,42 +204,38 @@ This is exactly as you had feared. The memo you didn&#39;t leak is now public re
 
 You didn&#39;t lose your job. In fact, no one at Blocker Plus ever knows about your moment of hesitation in your colleague&#39;s inbox. You are safe, but complicit.
 
-You continue your work, but now seemingly every call mentions the news, and the model is still in use for now. You can&#39;t shake the feeling that you could have done something earlier, and maybe things would have been different.
+You continue your work, but seemingly every call brings up the news, and the corrupted model is still in use for now. You can&#39;t shake the feeling that you could have done something earlier, and maybe things would have been different.
 
-[[End-&gt;End 4]]</tw-passagedata><tw-passagedata pid="17" name="Introduction" tags="" position="400,100" size="100,100">You&#39;ve been offered a position as a Regional Systems Administrator for &#39;&#39;Blocker Plus&#39;&#39;, a content filtration software company. 
+[[End-&gt;End 4]]
 
-They are a trusted partner for ensuring that school and library devices block children&#39;s access to inappropriate content, and they have a growing number of parents who trust Blocker Plus to protect their kids on their personal devices.
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="17" name="Parent Article" tags="" position="700,300" size="100,100">(text-size: 2)[Keeping your child safe online with Blocker Plus]
 
-The recruiter is excited to have you become part of their innovative, impactful team.
-
-→ [[Start the job.|Start Job]]
-
-→ [[Let me research the company a bit first.|Research Company]]</tw-passagedata><tw-passagedata pid="18" name="Parent Article" tags="" position="700,300" size="100,100">(text-size: 2)[Keeping your child safe online with Blocker Plus]
-
-As a parent, making the big change of giving your kid internet access can be a great thing, but it can also be one of the scariest. On one hand, it allows them to learn, be creative, and connect with friends online. It also exposes them to a seemingly endless stream of inappropriate or harmful content that&#39;s hard to keep up with. 
+As a parent, making the choice to give your child access to the internet can be both exciting and terrifying. On one hand, it can allow them to learn, be creative, and connect with their friends. On the other hand, it can expose them to a seemingly endless stream of inappropriate or harmful content that&#39;s hard to keep up with. 
 
 I&#39;ve tried many tools and methods that try to block inappropriate content, but none that have worked as well as Blocker Plus.
 
-Blocker Plus is an easy-to-use and comprehensive content filtration software tool that&#39;s given me peace of mind. It&#39;s been much better at recognizing and blocking harmful content than other products I&#39;ve tried, likely due to its AI filtration technology. 
+Blocker Plus is an easy-to-use and powerful content filtration tool that&#39;s given me peace of mind. Its AI filtration technology has made it much better at recognizing and blocking harmful content than other products I&#39;ve tried. 
 
-I was initially skeptical having to pay //&#39;&#39;$8.99 per month&#39;&#39;// to use it when there were free alternatives available, but I believe it&#39;s worth every penny for any parent who wants their children //fully// protected online.
+I was initially hesitant to pay //&#39;&#39;$8.99 per month&#39;&#39;// to use it when there were free alternatives available, but for how well it protects my child online, I believe it&#39;s worth every penny for any parent who wants their kids to be //truly// safe online.
 
+(if:(history: where its name contains &quot;About Company&quot;)&#39;s length is 0)[
+⮕ Read the company&#39;s [[About Us page|About Company]].](if:(history: where its name contains &quot;Shareholder Article&quot;)&#39;s length is 0)[
+⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]]
 
-(if:(history: where its name contains &quot;About Company&quot;)&#39;s length is 0)[⮕ Read the company&#39;s [[About Us page|About Company]].]
+⮕ [[Start the job.|Start Job]]
 
-(if:(history: where its name contains &quot;Shareholder Article&quot;)&#39;s length is 0)[⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]]
-
-⮕ [[Start the job.|Start Job]]</tw-passagedata><tw-passagedata pid="19" name="Research Company" tags="" position="700,100" size="100,100">Content filtration software? Hmm, this seems interesting.
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="18" name="Research Company" tags="" position="700,100" size="100,100">Content filtration software? Hmm, this seems interesting.
 
 ⮕ Read the company&#39;s [[About Us page|About Company]]
-
 ⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]]
-
 ⮕ Read the article [[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//|Shareholder Article]]
 
-⮕ [[Start the job.|Start Job]]</tw-passagedata><tw-passagedata pid="20" name="Shareholder Article" tags="" position="800,300" size="100,100">(text-size: 2)[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//]
 
-What&#39;s a great thing to invest in right now? Many would argue artificial intelligence. Sure, you have your typical giants like Nvidia, but how about this unexpected heavyweight that&#39;s making a name for itself on Wall Street?
+⮕ [[Start the job.|Start Job]]
+
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="19" name="Shareholder Article" tags="" position="800,300" size="100,100">(text-size: 2)[//This Sizzling Hot AI Stock Has Skyrocketed Over 110% This Year//]
+
+What&#39;s a great thing to invest in right now? Many would say that it&#39;s artificial intelligence. Sure, you have your giants like Nvidia and Microsoft, but how about this unexpected heavyweight that&#39;s making a name for itself on Wall Street?
 
 It&#39;s called &#39;&#39;Blocker Plus //(NYSE&amp;#58; BPLS)//&#39;&#39;, you may have heard of this content filtration software that schools, libraries, and parents trust to protect their kids from inappropriate content online. They&#39;ve had lucrative legacy contracts with schools and libraries for years, and a growing subscription plan business from parents looking to protect their kids online, with year-over-year subscriber counts up &#39;&#39;72%&#39;&#39;.
 
@@ -196,27 +243,29 @@ Now, investors have noticed their smart use of AI and machine learning. They&#39
 
 You&#39;d be crazy to not invest in &#39;&#39;Blocker Plus&#39;&#39;.
 
+(if:(history: where its name contains &quot;About Company&quot;)&#39;s length is 0)[⮕ Read the company&#39;s [[About Us page|About Company]].](if:(history: where its name contains &quot;Parent Article&quot;)&#39;s length is 0)[
+⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]].]
 
-(if:(history: where its name contains &quot;About Company&quot;)&#39;s length is 0)[⮕ Read the company&#39;s [[About Us page|About Company]].]
+⮕ [[Start the job.|Start Job]]
 
-(if:(history: where its name contains &quot;Parent Article&quot;)&#39;s length is 0)[⮕ Read the article [[//Keeping your child safe online with Blocker Plus//|Parent Article]].]
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="20" name="End Work Day" tags="" position="400,2000" size="100,100">After a couple more hours of doing your work, you finish everything early. 
 
-⮕ [[Start the job.|Start Job]]</tw-passagedata><tw-passagedata pid="21" name="End Work Day" tags="" position="400,2000" size="100,100">After a couple more hours of doing your work, you finish everything early. 
+(if: $answered_first_call is false and $answered_second_call is false)[The clock reads 4:00 PM, and you&#39;re able to leave a bit early.
 
-(if: $choice8_2 and $choice5_2)[The clock reads 4:00 PM, and you&#39;re able to leave a bit early.
+⮕ [[Clock out early.-&gt;Ending 1]]](else-if: ($followed_protocol_1 is true and $followed_protocol_2 is true) or ($answered_first_call is false and $followed_protocol_2 is true) or ($answered_second_call is false and $followed_protocol_1 is true))[You&#39;re left feeling a bit uncomfortable about the requests you had today, but regardless, you can call it a day.
 
-→ [[Clock out early.-&gt;Ending 1]]](else-if: $choice7_1)[You&#39;re left feeling a bit uncomfortable about the requests you had today, but regardless, you can call it a day.
-
-→ [[Clock out early.-&gt;Ending 3]]
+⮕ [[Clock out early.-&gt;Ending 3]]
 ](else:)[However, you&#39;re alarmed by what you&#39;ve heard today. You need to get to the bottom of this somehow.
     
-→ [[Spend more time investigating the issue.-&gt;Investigate Issue]]]</tw-passagedata><tw-passagedata pid="22" name="Login to Email" tags="" position="400,2300" size="100,100">With a rush of adrenaline, you log into your colleague’s email. 
+⮕ [[Spend more time investigating the issue.-&gt;Investigate Issue]]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;end-work-day&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="21" name="Login to Email" tags="" position="400,2300" size="100,100">With a rush of adrenaline, you log into your colleague’s email. 
 
 You find an email with an interesting subject line:
 
-___________________________________________________________________
-
-//Re: Model Corruption and Discriminatory Filtering. //
+&lt;hr style=&quot;width: 100%; border: 2px solid white;&quot;&gt;
+&lt;u&gt;//Re: Model Corruption and Discriminatory Filtering//&lt;/u&gt;
 
 //Evidence confirms that the model in Blocker Plus has been systematically corrupted by activist groups, leading to it blocking legitimate educational content on topics such as LGBTQ+ rights, vaccination science, and climate change. 
 
@@ -224,86 +273,103 @@ After long deliberation, Blocker Plus has decided to maintain the current model 
 
 We ask that you refrain from sharing these details with shareholders or federal officials who inquire about these specifics until we work out a solution.//
 
-___________________________________________________________________
-
-
+&lt;hr style=&quot;width: 100%; border: 2px solid white;&quot;&gt;
 You try to make sense of this sensitive information.
 
 You had already come this far. Surely the shareholders should know about this? However, you&#39;d //really// be risking your job.
 
-→ [[Contact a shareholder.-&gt;Contact Shareholder]]
+⮕ [[Contact a shareholder.-&gt;Contact Shareholder]]
 
-→ [[Log out and keep the information to yourself. -&gt;Back Out]]</tw-passagedata><tw-passagedata pid="23" name="Answer First Call Cont&#39;d" tags="" position="400,600" size="100,100">&quot;He can&#39;t see any reputable information about vaccines. The only sites that show up are unofficial vaccine-skeptical and conspiratorial websites.&quot;
+⮕ [[Log out and keep the information to yourself. -&gt;Back Out]]
 
-&quot;Hmm, that&#39;s odd... Blocker Plus shouldn&#39;t be restricting any such content. Are you sure it&#39;s from our software?&quot;, you respond.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;login-to-email&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="22" name="Answer First Call Cont&#39;d" tags="" position="400,600" size="100,100">//&quot;He can&#39;t see any reputable information about vaccines. The only sites that show up are unofficial vaccine-skeptical and conspiratorial websites.&quot;//
 
-&quot;Yes, I&#39;m sure, it&#39;s the only content blocker I use. I&#39;m a doctor, and this has been very upsetting for me, knowing this software is used in schools,  I thought Blocker Plus was just for inappropriate content. You need to do something about this, like disabling this filter on everyone&#39;s device&quot;
+//&quot;Hmm, that&#39;s odd... Blocker Plus shouldn&#39;t be restricting any such content. Are you sure it&#39;s from our software?&quot;//, you respond.
 
-Knowing that you only are only permitted to disable filters on a requested user&#39;s device, you hesitate.
+//&quot;Yes, I&#39;m sure, it&#39;s the only content blocker I use. I&#39;m a doctor, and this has been very upsetting for me, knowing this software is used in schools,  I thought Blocker Plus was just for inappropriate content. You need to do something about this, like disabling this filter on everyone&#39;s device&quot;//
 
-→ [[“I&#39;ll look into this and try to disable this filter for everyone.&quot;-&gt;Answer First Call: Break Protocol]]
+Knowing that you are only permitted to disable filters on a requested user&#39;s device, you hesitate.
 
-→ [[“Sorry ma&#39;am, but I can only disable individual device filters.” -&gt;Answer First Call: Follow Protocol]]</tw-passagedata><tw-passagedata pid="24" name="Call Supervisor" tags="" position="700,1000" size="100,100">You call and ask your supervisor about this. 
+⮕ [[“I&#39;ll look into this and try to disable this filter for everyone.&quot;-&gt;Answer First Call: Break Protocol]]
 
-Your supervisor responds &quot;We&#39;ve been investigating some complaints recently about content being blocked inappropriately. We&#39;ve been able to trace it to some rogue account&#39;s inputs which are causing issues with our machine learning classification model. We&#39;ve been removing such accounts, but this is an ongoing issue with no easy solution.&quot;
+⮕ [[“Sorry ma&#39;am, but I can only disable individual device filters.” -&gt;Answer First Call: Follow Protocol]]
 
-&quot;Can&#39;t you do something to change the model?&quot;, you ask.
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-first-call-contd&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="23" name="Call Supervisor" tags="" position="700,1000" size="100,100">You call and ask your supervisor about this. 
 
-&quot;We&#39;re still figuring this out, currently we have no easy way of turning off or changing the model to correct this. It&#39;s too important to our core functionality now, and we&#39;d lose all the progress we&#39;ve made with our AI efforts. Just report any such instances to us and we will ban the rogue accounts.&quot;
+Your supervisor responds //&quot;We&#39;ve been investigating some complaints recently about content being blocked inappropriately. We&#39;ve been able to trace it to some rogue account&#39;s inputs which are causing issues with our machine learning classification model. We&#39;ve been removing such accounts, but this is an ongoing issue with no easy solution.&quot;//
+
+//&quot;Can&#39;t you do something to change the model?&quot;//, you ask.
+
+//&quot;We&#39;re still figuring this out, currently we have no easy way of turning off or changing the model to correct this. It&#39;s too important to our core functionality now, and we&#39;d lose all the progress we&#39;ve made with our AI efforts. Just report any such instances to us and we will ban the rogue accounts.&quot;//
 
 You agree reluctantly, and end the call.
 
-→ [[Investigate the issue more.-&gt;Investigate Further]]
+⮕ [[Investigate the issue more.-&gt;Investigate Further]]
 
-→ [[Continue on with your work.-&gt;Continue Job]]</tw-passagedata><tw-passagedata pid="25" name="Investigate Further" tags="" position="700,1200" size="100,100">You decide to investigate the issue further.
+⮕ [[Continue on with your work.-&gt;Continue Job]]
 
-After doing some searching online, you find an anonymous forum with an anti-vaccine activist group discussing how to exploit Blocker Plus&#39;s classification algorithm to block public health information, and to only allow certain information to get through.  Through their coordinated efforts, they are able to re-train the classification model to block whatever content they choose. 
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;call-supervisor&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="24" name="Investigate Further" tags="" position="700,1200" size="100,100">You decide to investigate the issue further.
 
-They specifically mention Blocker Plus&#39;s seemingly lax implementation of machine learning and AI for being responsible for the ability to be able to affect all users&#39; devices.
+After some searching online, you find an anonymous forum group discussing how to manipulate Blocker Plus&#39;s feedback system. They explain that by injecting offensive or inappropriate text into legitimate webpages using a browser extension, then flagging the pages as inappropriate, it tricks Blocker Plus&#39;s classification model into misclassifying content. Through their coordinated efforts, entire categories of information can be blocked. Users had talked about their success in blocking materials related to vaccination, same-sex marriage, and climate change.
 
-→ [[Continue on with your work.-&gt;Continue Job]]</tw-passagedata><tw-passagedata pid="26" name="Continue Job" tags="" position="400,1300" size="100,100">You decide to get back to work. 
+The users specifically mention Blocker Plus&#39;s poor security and overly permissive machine learning feedback mechanism for making it possible to affect all users&#39; devices.
+
+⮕ [[Continue on with your work.-&gt;Continue Job]]
+
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="25" name="Continue Job" tags="" position="400,1300" size="100,100">You decide to get back to work. 
 
 It’s around noon when you get another call. 
 
 This time, you recognize the caller ID - it’s from the local middle school. You had received calls from their librarian about setting up the filtering system when you were first hired. 
 
-→ [[Pick up the phone.-&gt;Answer Second Call]]
+⮕ [[Pick up the phone.-&gt;Answer Second Call]]
 
-→ [[Let it go to voicemail.-&gt;Ignore Second Call]]</tw-passagedata><tw-passagedata pid="27" name="Answer Second Call Cont&#39;d" tags="" position="200,1600" size="100,100">“The project was supposed to be about climate change. The reason so many of them failed is because all the legitimate scientific sources about climate change were blocked on the school library’s computers.” 
+⮕ [[Let it go to voicemail.-&gt;Ignore Second Call]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;continue-job&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="26" name="Answer Second Call Cont&#39;d" tags="" position="200,1600" size="100,100">“The project was supposed to be about climate change. The reason so many of them failed is because all the legitimate scientific sources about climate change were blocked on the school library’s computers.” 
 
 “I mean, it was a disaster. I even had a couple of kids protest that global warming isn’t real because of the stuff they read online. And when I looked at their computers, there was nothing to disprove it.” 
 
-You respond &quot;I&#39;m sorry to hear that sir. I&#39;ll be sure to look into this and disable this filtering on your library&#39;s computers.&quot;
+You respond &quot;I&#39;m sorry to hear that ma&#39;am. I&#39;ll be sure to look into this and disable this filtering on your library&#39;s computers.&quot;
 
-“What do you mean just the library&#39;s computers? This needs to be done for everyone!&quot;, he responds frustratedly.
+“What do you mean just the library&#39;s computers? This needs to be done for everyone!&quot;, she responds frustratedly.
 
 You remember your training, and that you only can modify devices under the control of the caller.
 
-→ [[&quot;I&#39;m only permitted to modify the library&#39;s devices.&quot;-&gt;Answer Second Call - Follow Protocol]]
+⮕ [[&quot;I&#39;m only permitted to modify the library&#39;s devices.&quot;-&gt;Answer Second Call - Follow Protocol]]
 
-→ [[&quot;You&#39;re right. I&#39;ll be sure to do this for all users.&quot;-&gt;Answer Second Call - Break Protocol]]</tw-passagedata><tw-passagedata pid="28" name="Start" tags="" position="100,100" size="100,100">This “Choose Your Own Adventure” game is inspired by the case study (link: &quot;Malicious Inputs to Content Filters&quot;)[(goto-url: &quot;https://www.acm.org/code-of-ethics/case-studies/malicious-inputs-to-content-filters&quot;)] by the Association for Computing Machinery on the ACM Code of Ethics and Professional Conduct. 
+⮕ [[&quot;You&#39;re right. I&#39;ll be sure to do this for all users.&quot;-&gt;Answer Second Call - Break Protocol]]
 
-This game was created by Simran Vig, Trent Carlson, Andy Do and Lynn Nguyen. Each student took on the following role:
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;answer-second-call-contd&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="27" name="Start" tags="" position="100,100" size="100,100">This //“Choose Your Own Adventure”// game is inspired by the case study (link: &quot;Malicious Inputs to Content Filters&quot;)[(goto-url: &quot;https://www.acm.org/code-of-ethics/case-studies/malicious-inputs-to-content-filters&quot;)] by the Association for Computing Machinery (ACM) on their //Code of Ethics and Professional Conduct.// 
 
-Simran: Planning and Writing
-Trent: Writing and Implementation
-Andy: Programming and Implementation
-Lynn: Programming and Implementation
+This game was created by **Project Group 13**. Each of us took on the following roles:
 
+&lt;table border=&quot;1&quot; style=&quot;width:100%; text-align:center;&quot;&gt;&lt;tr&gt;&lt;th&gt;Student Name&lt;/th&gt;&lt;th&gt;Role&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Simran Vig&lt;/td&gt;&lt;td&gt;Planning and Writing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Trent Carlson&lt;/td&gt;&lt;td&gt;Writing and Implementation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Hoa An (Andy) Do&lt;/td&gt;&lt;td&gt;Programming and Implementation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Lynn Nguyen&lt;/td&gt;&lt;td&gt;Programming and Implementation&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+[[⮕ Continue-&gt;Title Screen]]
 
-[[Continue-&gt;Title Screen]]</tw-passagedata><tw-passagedata pid="29" name="Start Job" tags="" position="400,300" size="100,100">You start the job, and get trained quickly. 
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="28" name="Start Job" tags="" position="400,300" size="100,100">You start the job, and get trained quickly. 
 
 It largely involves reviewing feedback from Blocker Plus users and disabling filters on devices when requested by adults, in accordance with the Children&#39;s Internet Protection Act (CIPA). Your day is spent using the Blocker Plus admin dashboard, closing tickets, responding to emails, and taking the occasional call.
 
 A few days later, while at work, your work phone rings. It&#39;s an unknown caller. You don&#39;t usually get calls from outside the company, so you&#39;re curious as to who it could be.
 
-→ [[Pick up the phone.-&gt;Answer First Call]]
+⮕ [[Pick up the phone.-&gt;Answer First Call]]
 
-→ [[Let it go to voicemail.-&gt;Ignore First Call]]</tw-passagedata><tw-passagedata pid="30" name="Title Screen" tags="" position="250,100" size="100,100">(text-colour:red)[(text-size:2)[Malicious Inputs]]
+⮕ [[Let it go to voicemail.-&gt;Ignore First Call]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;start-job&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="29" name="Title Screen" tags="" position="250,100" size="100,100">(text-colour:red)[(text-size:2)[Malicious Inputs]]
 
 ...(live:0.5s)[.](live:1s)[.](live:1.5s)[.](live:2s)[.](live:2.5s)[.](live:3s)[.](live:3.5s)[.]
 
-(live: 4s)[(goto: &quot;Introduction&quot;)]</tw-passagedata><tw-passagedata pid="31" name="Ending 2.1" tags="" position="300,2800" size="100,100">It&#39;s a video call with your manager and a stern-faced woman from HR.
+(live: 4s)[(goto: &quot;Introduction&quot;)]
+
+(masteraudio: &#39;stopall&#39;)</tw-passagedata><tw-passagedata pid="30" name="Ending 2.1" tags="" position="300,2800" size="100,100">It&#39;s a video call with your manager and a stern-faced woman from HR.
 
 &quot;An internal investigation into a security breach determined you accessed and shared confidential information. 
 
@@ -311,14 +377,10 @@ A few days later, while at work, your work phone rings. It&#39;s an unknown call
 
 As you&#39;re packing up and leaving your office, you receive an email from the shareholder you contacted:
 
-___________________________________________________________________
-
-
+&lt;hr style=&quot;width: 100%; border: 2px solid white;&quot;&gt;
 Thank you for your courage. Your information was the catalyst we needed. The board is forcing a change in leadership and a full, public audit of the filtration model. Your actions, though unorthodox, may have just saved this company from itself.
 
-___________________________________________________________________
-
-
+&lt;hr style=&quot;width: 100%; border: 2px solid white;&quot;&gt;
 Months later, the story breaks. 
 
 (text-size: 2)[&quot;Blocker Plus admits to model corruption, announces full overhaul.&quot;]
@@ -327,29 +389,97 @@ You are never named, but you see the outcomes: a science teacher from Forrest Mi
 
 You may have lost your job, but you acted ethically, given the impact that Blocker Plus has.
 
-Your phone rings again—this time, it&#39;s a recruiter from a new, ethics-focused tech firm who heard whispers about the &quot;conscientious objector&quot; from Blocker Plus. This wasn&#39;t the end, simply a new beginning.
+Your phone rings again - this time, it&#39;s a recruiter from a new, ethics-focused tech firm who heard whispers about the &quot;conscientious objector&quot; from Blocker Plus. This wasn&#39;t the end, simply a new beginning.
 
 [[End-&gt;End 2]]
 
-</tw-passagedata><tw-passagedata pid="32" name="End 1" tags="" position="100,3000" size="100,100">(text-size:3)[Game Over]
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;ending-2-1&#39;, &#39;play&#39;)
 
-In this playthrough, you got **Ending 1 - Lazy Worker.**
+</tw-passagedata><tw-passagedata pid="31" name="End 1" tags="" position="100,3000" size="100,100">(text-size:3)[Game Over]
+
+In this playthrough, you got (text-color: red)[**Ending 1 - Lazy Worker.**]
+
+There are 4 possible endings. Try for the other endings!
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;end&#39;, &#39;play&#39;)
+
+</tw-passagedata><tw-passagedata pid="32" name="End 2" tags="" position="300,3000" size="100,100">(text-size:3)[Game Over]
+
+In this playthrough, you got (text-color: green)[**Ending 2 - Whistleblower.**]
 
 There are 4 possible endings. Try for the other 3 endings!
 
-</tw-passagedata><tw-passagedata pid="33" name="End 2" tags="" position="300,3000" size="100,100">(text-size:3)[Game Over]
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;end&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="33" name="End 3" tags="" position="500,3000" size="100,100">(text-size:3)[Game Over]
 
-In this playthrough, you got **Ending 2 - Whistleblower.** 
+In this playthrough, you got (text-color: orange)[**Ending 3 - Obedient Worker.**]
 
-There are 4 possible endings. Try for the other 3 endings!</tw-passagedata><tw-passagedata pid="34" name="End 3" tags="" position="500,3000" size="100,100">(text-size:3)[Game Over]
+There are 4 possible endings. Try for the other 3 endings!
 
-In this playthrough, you got **Ending 3 - Obedient Worker.**
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;end&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="34" name="End 4" tags="" position="700,3000" size="100,100">(text-size:3)[Game Over]
 
-There are 4 possible endings. Try for the other 3 endings!</tw-passagedata><tw-passagedata pid="35" name="End 4" tags="" position="700,3000" size="100,100">(text-size:3)[Game Over]
+In this playthrough, you got (text-color:blue)[**Ending 4 - Unsettled Worker.**]
 
-In this playthrough, you got **Ending 4 - Unsettled Worker.**
+There are 4 possible endings. Try for the other 3 endings!
 
-There are 4 possible endings. Try for the other 3 endings!</tw-passagedata></tw-storydata>
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;end&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="35" name="Introduction" tags="" position="400,100" size="100,100">You&#39;ve been offered a position as a Regional Systems Administrator for &#39;&#39;Blocker Plus&#39;&#39;, a content filtration software company. 
+
+They are a trusted partner for ensuring that school and library devices block children&#39;s access to inappropriate content, and they have a growing number of parents who trust Blocker Plus to protect their kids on their personal devices.
+
+The recruiter is excited to have you become part of their innovative and impactful team.
+
+⮕ [[Start the job.|Start Job]]
+
+⮕ [[Let me research the company a bit first.|Research Company]]
+
+(masteraudio: &#39;stopall&#39;)
+(track: &#39;introduction&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="36" name="hal.tracks" tags="" position="100,300" size="100,100">introduction: https://static.wixstatic.com/mp3/ea2823_a8ded8ffdf434490986f08747677afbf.mp3
+
+start-job: https://static.wixstatic.com/mp3/ea2823_cdb23651df7f4045835da22b3bebf3a0.mp3
+
+answer-first-call: https://static.wixstatic.com/mp3/ea2823_5f90a69bb4db4520808a9dfec7d728d2.mp3
+
+answer-first-call-contd: https://static.wixstatic.com/mp3/ea2823_a2f8bf8d9363453cab494f6ed985cd2d.mp3
+
+answer-first-call-follow-protocol: https://static.wixstatic.com/mp3/ea2823_b4ba522e9861407a9320ce2293c1c518.mp3
+
+answer-first-call-break-protocol: https://static.wixstatic.com/mp3/ea2823_f5e19a27c63e4e0bafdb541aa198f598.mp3
+
+call-supervisor: https://static.wixstatic.com/mp3/ea2823_0e53bcc38804491dbc8fba355bac4859.mp3
+
+continue-job: https://static.wixstatic.com/mp3/ea2823_cdb23651df7f4045835da22b3bebf3a0.mp3
+
+ignore-second-call: https://static.wixstatic.com/mp3/ea2823_fe79f02a3f3947d2b3daf91b96066dfa.mp3
+
+answer-second-call: https://static.wixstatic.com/mp3/ea2823_3e2610307dc64c5188e0b07d317fa4c3.mp3
+
+answer-second-call-contd: https://static.wixstatic.com/mp3/ea2823_16efe5ccae12444bb7fd13edb2f28b5b.mp3
+
+answer-second-call-follow-protocol: https://static.wixstatic.com/mp3/ea2823_81c9b7af520b4645a81d42d7e4462c3c.mp3
+
+answer-second-call-break-protocol: https://static.wixstatic.com/mp3/ea2823_a55cd56799d04aeba6e1170151044f8f.mp3
+
+end-work-day: https://static.wixstatic.com/mp3/ea2823_a9ef01b009b14f58a05d9b7d5f48f32b.mp3
+
+investigate-issue: https://static.wixstatic.com/mp3/ea2823_a8ded8ffdf434490986f08747677afbf.mp3
+
+login-to-email: https://static.wixstatic.com/mp3/ea2823_1d00b4c7613c46b0aa02bab7273b0c02.mp3
+
+back-out: https://static.wixstatic.com/mp3/ea2823_a8ded8ffdf434490986f08747677afbf.mp3
+
+contact-shareholder: https://static.wixstatic.com/mp3/ea2823_09ccc70d961840df97ddcebb40476882.mp3
+
+ending-1: https://static.wixstatic.com/mp3/ea2823_09ccc70d961840df97ddcebb40476882.mp3
+
+ending-2: https://static.wixstatic.com/mp3/ea2823_cdb23651df7f4045835da22b3bebf3a0.mp3
+
+ending-2-1: https://static.wixstatic.com/mp3/ea2823_e9ef06601e0341e28cb446b8e01a196c.mp3
+
+end: https://static.wixstatic.com/mp3/ea2823_9e8f9d44f3ab418d9aeb7c36e9c3f85e.mp3</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
